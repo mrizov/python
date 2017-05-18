@@ -1,0 +1,39 @@
+sum = float(input('Please enter an amount: '))
+input_Currency = input(str('Enter your input currency, supported currency is BGN, USD, EUR, GBP: '))
+output_Currency = input('Enter output currency you want, supported currency is BGN, USD, EUR, GBP: : ')
+
+if input_Currency == "BGN" or "bgn" and output_Currency == "USD" or "usd":
+    print("{0:.2f}".format(sum*1.79549) + ' ' + output_Currency)
+elif input_Currency == "BGN" or "bgn" and output_Currency == "EUR" or "eur":
+    print("{0:.2f}".format(sum*1.95583) + ' ' + output_Currency)
+elif input_Currency == "BGN" or "bgn" and output_Currency == "GBP" or "gbp":
+    print("{0:.2f}".format(sum*2.53405) + ' ' + output_Currency)
+elif input_Currency == "BGN" or "bgn" and output_Currency == "BGN" or "bgn":
+    print("{0:.2f}".format(sum ) + ' ' + output_Currency)
+
+if input_Currency == "USD" or "usd" and output_Currency == "EUR" or "eur":
+        print("{0:.2f}".format(sum*1.79549/1.95583) + ' ' + output_Currency)
+elif input_Currency == "USD" or "usd" and output_Currency == "GBP" or "gbp":
+    print("{0:.2f}".format(sum*1.79549/2.53405) + ' ' + output_Currency)
+elif input_Currency == "USD" or "usd" and output_Currency == "BGN" or "bgn":
+    print("{0:.2f}".format(sum*1.79549) + ' ' + output_Currency)
+elif input_Currency == "USD" or "usd" and output_Currency == "USD" or "usd":
+    print("{0:.2f}".format(sum ) + ' ' + output_Currency)
+
+if input_Currency == "EUR" or "eur" and output_Currency == "GBP" or "gbp":
+        print("{0:.2f}".format(sum*1.95583/2.53405) + ' ' + output_Currency)
+elif input_Currency == "EUR" or "eur" and output_Currency == "USD" or "usd":
+    print("{0:.2f}".format(sum*1.95583/1.79549) + ' ' + output_Currency)
+elif input_Currency == "EUR" or "eur" and output_Currency == "BGN" or "bgn":
+    print("{0:.2f}".format(sum*1.95583) + ' ' + output_Currency)
+elif input_Currency == "EUR" or "eur" and output_Currency == "EUR" or "eur":
+    print("{0:.2f}".format(sum ) + ' ' + output_Currency)
+
+if input_Currency == "GBP" or "gbp" and output_Currency == "EUR" or "eur":
+        print("{0:.2f}".format(sum*2.53405/1.95583) + ' ' + output_Currency)
+elif input_Currency == "GBP" or "gbp" and output_Currency == "USD" or "usd":
+    print("{0:.2f}".format(sum*2.53405/1.79549) + ' ' + output_Currency)
+elif input_Currency == "GBP" or "gbp" and output_Currency == "BGN" or "bgn":
+    print("{0:.2f}".format(sum*2.53405) + ' ' + output_Currency)
+elif input_Currency == "GBP" or "gbp" and output_Currency == "GBP" or "gbp":
+    print("{0:.2f}".format(sum ) + ' ' + output_Currency)
